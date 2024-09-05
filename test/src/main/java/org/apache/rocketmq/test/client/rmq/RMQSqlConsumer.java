@@ -31,7 +31,7 @@ public class RMQSqlConsumer extends RMQNormalConsumer {
         super(nsAddr, topic, "*", consumerGroup, listener);
         this.selector = selector;
     }
-
+    // Update1
     @Override
     public void create() {
         super.create();
