@@ -15,6 +15,8 @@
  *  limitations under the License.
  */
 
+// trigger
+
 package org.apache.rocketmq.test.client.rmq;
 
 import org.apache.rocketmq.client.consumer.MessageSelector;
