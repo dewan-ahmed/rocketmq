@@ -15,7 +15,7 @@
  *  limitations under the License.
  */
 
-// trigger
+// trigger1
 
 package org.apache.rocketmq.test.client.rmq;
 
