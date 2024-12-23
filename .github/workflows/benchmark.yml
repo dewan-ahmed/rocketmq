@@ -43,10 +43,10 @@ jobs:
           
           # Print a message indicating that the current time has been saved
           echo "Current time has been saved to $filename"
-      - name: Test UTs
+      - name: Test UTs using Maven
         continue-on-error: true
         run: |
-          bazel test //...
+          mvn clean install -DskipITs -Dmaven.test.failure.ignore=true -DfailIfNoTests=false
       - name: Upload Benchmark Duration
         run: python gha_add_rows_ti.py
         env:
